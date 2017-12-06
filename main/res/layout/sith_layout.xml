@@ -1,0 +1,404 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.android.starwarsquizz.MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/saber_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/lightsaber_red"
+        android:layout_alignParentTop="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_below="@id/saber_top"
+        android:fillViewport="true"
+        android:layout_marginBottom="55dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:text="@string/sith_question_1"
+                android:background="@color/sith_question_background"
+                android:gravity="start"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:paddingLeft="8dp"
+                android:paddingStart="8dp"
+                android:paddingRight="8dp"
+                android:paddingEnd="8dp" />
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/sith_answer_1_1"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginStart="35dp"
+                    app:buttonTint="@color/sith_red"/>
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/sith_answer_1_2"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginStart="35dp"
+                    app:buttonTint="@color/sith_red"/>
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/sith_answer_1_3"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginStart="35dp"
+                    app:buttonTint="@color/sith_red"/>
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/sith_answer_1_4"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginStart="35dp"
+                    app:buttonTint="@color/sith_red"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:text="@string/sith_question_2"
+                android:background="@color/sith_question_background"
+                android:gravity="start"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:paddingLeft="8dp"
+                android:paddingStart="8dp"
+                android:paddingRight="8dp"
+                android:paddingEnd="8dp"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/sith_answer_2_1"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginStart="35dp"
+                    app:buttonTint="@color/sith_red"/>
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/sith_answer_2_2"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginStart="35dp"
+                    app:buttonTint="@color/sith_red"/>
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/sith_answer_2_3"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginStart="35dp"
+                    app:buttonTint="@color/sith_red"/>
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/sith_answer_2_4"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginStart="35dp"
+                    app:buttonTint="@color/sith_red"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:text="@string/sith_question_3"
+                android:background="@color/sith_question_background"
+                android:gravity="start"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:paddingLeft="8dp"
+                android:paddingStart="8dp"
+                android:paddingRight="8dp"
+                android:paddingEnd="8dp"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/sith_answer_3_1"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginStart="35dp"
+                    app:buttonTint="@color/sith_red"/>
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/sith_answer_3_2"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginStart="35dp"
+                    app:buttonTint="@color/sith_red"/>
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/sith_answer_3_3"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginStart="35dp"
+                    app:buttonTint="@color/sith_red"/>
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/sith_answer_3_4"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginStart="35dp"
+                    app:buttonTint="@color/sith_red"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:text="@string/sith_question_4"
+                android:background="@color/sith_question_background"
+                android:gravity="start"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:paddingLeft="8dp"
+                android:paddingStart="8dp"
+                android:paddingRight="8dp"
+                android:paddingEnd="8dp"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/sith_answer_4_1"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginStart="35dp"
+                    app:buttonTint="@color/sith_red"/>
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/sith_answer_4_2"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginStart="35dp"
+                    app:buttonTint="@color/sith_red"/>
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/sith_answer_4_3"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginStart="35dp"
+                    app:buttonTint="@color/sith_red"/>
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/sith_answer_4_4"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginStart="35dp"
+                    app:buttonTint="@color/sith_red"/>
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"
+                android:text="@string/sith_question_5"
+                android:background="@color/sith_question_background"
+                android:gravity="start"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:paddingLeft="8dp"
+                android:paddingStart="8dp"
+                android:paddingRight="8dp"
+                android:paddingEnd="8dp"/>
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/sith_answer_5_1"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginStart="35dp"
+                    app:buttonTint="@color/sith_red"/>
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/sith_answer_5_2"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginStart="35dp"
+                    app:buttonTint="@color/sith_red"/>
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/sith_answer_5_3"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginStart="35dp"
+                    app:buttonTint="@color/sith_red"/>
+
+                <android.support.v7.widget.AppCompatRadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/sith_answer_5_4"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginStart="35dp"
+                    app:buttonTint="@color/sith_red"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/black">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/button_border"
+            android:textColor="@color/yellow"
+            android:layout_gravity="center_vertical"
+            android:text="@string/go_back"
+            android:onClick="goBackSith"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:textColor="@color/yellow"
+            android:textSize="15sp"
+            android:text="@string/number_of_marked_questions"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:layout_marginTop="15dp"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/button_border"
+            android:textColor="@color/yellow"
+            android:layout_gravity="center_vertical"
+            android:text="@string/done"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+
+

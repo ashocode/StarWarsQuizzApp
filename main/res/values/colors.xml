@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="yellow">#FFEA00</color>
+    <color name="jedi_blue">#B3E5FC</color>
+    <color name="sith_red">#E53935</color>
+    <color name="sith_question_background">#5D4037</color>
+    <color name="jedi_question_background">#455A64</color>
+</resources>

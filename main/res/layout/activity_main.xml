@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:fillViewport="true"
+    tools:context="com.example.android.starwarsquizz.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/pick_side"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@string/pick_your_side"
+            android:textAllCaps="true"
+            android:textColor="@color/yellow"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="2dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="@string/jedi"
+                android:textAllCaps="true"
+                android:textColor="@color/jedi_blue"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="@string/sith"
+                android:textAllCaps="true"
+                android:textColor="@color/sith_red"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+
+            <ImageButton
+                android:id="@+id/jedi_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:onClick="selectJedi"
+                android:padding="20dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/jedi_button" />
+
+            <ImageButton
+                android:id="@+id/sith_button"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:adjustViewBounds="true"
+                android:onClick="selectSith"
+                android:scaleType="centerInside"
+                android:src="@drawable/sith_button" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/selected_side"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center_horizontal"
+            android:text=""
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/button_border"
+            android:text="@string/start"
+            android:textColor="@color/yellow"
+            android:onClick="startQuizz"/>
+
+    </LinearLayout>
+
+
+</ScrollView>
