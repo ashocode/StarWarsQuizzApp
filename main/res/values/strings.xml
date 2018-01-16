@@ -4,13 +4,13 @@
     <string name="jedi">jedi</string>
     <string name="sith">sith</string>
     <string name="start">start</string>
-    <string name="sith_question_1">1. What was the name of Darth Vader before he joined the Dark side?</string>
-    <string name="sith_question_2">2. Who was NOT on the Dark side?</string>
+    <string name="sith_question_4">4. What was the name of Darth Vader before he joined the Dark side?</string>
+    <string name="sith_question_2">2. Who was on the Dark side?</string>
     <string name="sith_question_3">3. What is the name of the Star Wars movie telling the story of the stolen Death Star plans?</string>
-    <string name="sith_question_4">4. What is the name of the planet where Obi-Wan fought with Anakin?</string>
+    <string name="sith_question_1">1. What is the name of the planet where Obi-Wan fought with Anakin?</string>
     <string name="sith_question_5">5. What is the name of the Emperor?</string>
     <string name="number_of_marked_questions">0 out of 5</string>
-    <string name="done">done</string>
+    <string name="done">finish</string>
     <string name="go_back">back</string>
     <string name="sith_answer_1_1">Anakin Skywalker</string>
     <string name="sith_answer_1_2">Jango Fett</string>
@@ -19,7 +19,7 @@
     <string name="sith_answer_2_1">Darth Maul</string>
     <string name="sith_answer_2_2">Count Dooku</string>
     <string name="sith_answer_2_3">Qui-Gon Jinn</string>
-    <string name="sith_answer_2_4">Darth Sidious</string>
+    <string name="sith_answer_2_4">Jar Jar Binks</string>
     <string name="sith_answer_3_1">Revenge of the Sith</string>
     <string name="sith_answer_3_2">The phantom menace</string>
     <string name="sith_answer_3_3">A new hope</string>
@@ -33,7 +33,7 @@
     <string name="sith_answer_5_3">Valorum</string>
     <string name="sith_answer_5_4">Han Solo</string>
     <string name="jedi_question_1">1. Approximately how long has Yoda lived?</string>
-    <string name="jedi_question_2">2. Who was NOT a member of the Jedi High Counsil?</string>
+    <string name="jedi_question_2">2. Who was a member of the Jedi High Counsil?</string>
     <string name="jedi_question_3">3. What is the name of the first released Star Wars movie?</string>
     <string name="jedi_question_4">4. What is the name of Anakin Skywalker\'s home planet?</string>
     <string name="jedi_question_5">5. What is the name of Han Solo\'s ship?</string>
@@ -43,19 +43,21 @@
     <string name="jedi_answer_1_4">More than 3000 years</string>
     <string name="jedi_answer_2_1">Yoda</string>
     <string name="jedi_answer_2_2">Mace Windu</string>
-    <string name="jedi_answer_2_3">Obi-Wan Kenobi</string>
+    <string name="jedi_answer_2_3">Luke Skywalker</string>
     <string name="jedi_answer_2_4">Qui-Gon Jinn</string>
     <string name="jedi_answer_3_1">Revenge of the Sith</string>
     <string name="jedi_answer_3_2">The phantom menace</string>
     <string name="jedi_answer_3_3">A new hope</string>
     <string name="jedi_answer_3_4">Rogue one</string>
-    <string name="jedi_answer_4_1">Naboo</string>
-    <string name="jedi_answer_4_2">Kamino</string>
-    <string name="jedi_answer_4_3">Alderaan</string>
-    <string name="jedi_answer_4_4">Tatooine</string>
     <string name="jedi_answer_5_1">Millennium Falcon</string>
     <string name="jedi_answer_5_2">Death Star</string>
     <string name="jedi_answer_5_3">Big Berta</string>
     <string name="jedi_answer_5_4">Tie Fighter</string>
     <string name="jedi_saber">jedi saber</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="your_knowledge_of_the_force">Your knowledge of the Force</string>
+    <string name="points">points</string>
+    <string name="restart">restart</string>
 </resources>

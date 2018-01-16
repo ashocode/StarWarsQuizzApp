@@ -7,7 +7,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/black"
-    android:padding="8dp">
+    android:padding="8dp"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:descendantFocusability="beforeDescendants">
 
     <ImageView
         android:contentDescription="@string/jedi_saber"
@@ -33,64 +36,45 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginRight="20dp"
-                android:textColor="@android:color/white"
-                android:textSize="16sp"
                 android:text="@string/jedi_question_1"
                 android:background="@color/jedi_question_background"
-                android:gravity="start"
-                android:paddingTop="2dp"
-                android:paddingBottom="2dp"
-                android:paddingLeft="8dp"
-                android:paddingStart="8dp"
-                android:paddingRight="8dp"
-                android:paddingEnd="8dp" />
+                style="@style/QuestionsStyle"/>
 
             <RadioGroup
+                android:id="@+id/jedi_question_one"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/jedi_question_one_answer_one"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@android:color/white"
-                    android:layout_marginTop="4dp"
                     android:text="@string/jedi_answer_1_1"
-                    android:layout_marginLeft="35dp"
-                    android:layout_marginStart="35dp"
+                    style="@style/AnswersStyle"
                     app:buttonTint="@color/jedi_blue"/>
 
                 <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/jedi_question_one_answer_two"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@android:color/white"
-                    android:layout_marginTop="4dp"
                     android:text="@string/jedi_answer_1_2"
-                    android:layout_marginLeft="35dp"
-                    android:layout_marginStart="35dp"
+                    style="@style/AnswersStyle"
                     app:buttonTint="@color/jedi_blue"/>
 
                 <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/jedi_question_one_answer_three"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@android:color/white"
-                    android:layout_marginTop="4dp"
                     android:text="@string/jedi_answer_1_3"
-                    android:layout_marginLeft="35dp"
-                    android:layout_marginStart="35dp"
+                    style="@style/AnswersStyle"
                     app:buttonTint="@color/jedi_blue"/>
 
                 <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/jedi_question_one_answer_four"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@android:color/white"
-                    android:layout_marginTop="4dp"
                     android:text="@string/jedi_answer_1_4"
-                    android:layout_marginLeft="35dp"
-                    android:layout_marginStart="35dp"
+                    style="@style/AnswersStyle"
                     app:buttonTint="@color/jedi_blue"/>
 
             </RadioGroup>
@@ -98,131 +82,90 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginRight="20dp"
-                android:textColor="@android:color/white"
-                android:textSize="16sp"
+                android:layout_marginTop="@dimen/SixteenDP"
                 android:text="@string/jedi_question_2"
                 android:background="@color/jedi_question_background"
-                android:gravity="start"
-                android:paddingTop="2dp"
-                android:paddingBottom="2dp"
-                android:paddingLeft="8dp"
-                android:paddingStart="8dp"
-                android:paddingRight="8dp"
-                android:paddingEnd="8dp"/>
+                style="@style/QuestionsStyle"/>
 
-            <RadioGroup
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
 
-                <android.support.v7.widget.AppCompatRadioButton
+
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/jedi_question_two_answer_one"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@android:color/white"
-                    android:layout_marginTop="4dp"
                     android:text="@string/jedi_answer_2_1"
-                    android:layout_marginLeft="35dp"
-                    android:layout_marginStart="35dp"
+                    style="@style/AnswersStyle"
                     app:buttonTint="@color/jedi_blue"/>
 
-                <android.support.v7.widget.AppCompatRadioButton
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/jedi_question_two_answer_two"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@android:color/white"
-                    android:layout_marginTop="4dp"
                     android:text="@string/jedi_answer_2_2"
-                    android:layout_marginLeft="35dp"
-                    android:layout_marginStart="35dp"
+                    style="@style/AnswersStyle"
                     app:buttonTint="@color/jedi_blue"/>
 
-                <android.support.v7.widget.AppCompatRadioButton
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/jedi_question_two_answer_three"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@android:color/white"
-                    android:layout_marginTop="4dp"
                     android:text="@string/jedi_answer_2_3"
-                    android:layout_marginLeft="35dp"
-                    android:layout_marginStart="35dp"
+                    style="@style/AnswersStyle"
                     app:buttonTint="@color/jedi_blue"/>
 
-                <android.support.v7.widget.AppCompatRadioButton
+                <android.support.v7.widget.AppCompatCheckBox
+                    android:id="@+id/jedi_question_two_answer_four"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@android:color/white"
-                    android:layout_marginTop="4dp"
                     android:text="@string/jedi_answer_2_4"
-                    android:layout_marginLeft="35dp"
-                    android:layout_marginStart="35dp"
+                    style="@style/AnswersStyle"
                     app:buttonTint="@color/jedi_blue"/>
 
-            </RadioGroup>
+
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginRight="20dp"
-                android:textColor="@android:color/white"
-                android:textSize="16sp"
+                android:layout_marginTop="@dimen/SixteenDP"
                 android:text="@string/jedi_question_3"
                 android:background="@color/jedi_question_background"
-                android:gravity="start"
-                android:paddingTop="2dp"
-                android:paddingBottom="2dp"
-                android:paddingLeft="8dp"
-                android:paddingStart="8dp"
-                android:paddingRight="8dp"
-                android:paddingEnd="8dp"/>
+                style="@style/QuestionsStyle"/>
 
             <RadioGroup
+                android:id="@+id/jedi_question_three"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/jedi_question_three_answer_one"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@android:color/white"
-                    android:layout_marginTop="4dp"
                     android:text="@string/jedi_answer_3_1"
-                    android:layout_marginLeft="35dp"
-                    android:layout_marginStart="35dp"
+                    style="@style/AnswersStyle"
                     app:buttonTint="@color/jedi_blue"/>
 
                 <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/jedi_question_three_answer_two"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@android:color/white"
-                    android:layout_marginTop="4dp"
                     android:text="@string/jedi_answer_3_2"
-                    android:layout_marginLeft="35dp"
-                    android:layout_marginStart="35dp"
+                    style="@style/AnswersStyle"
                     app:buttonTint="@color/jedi_blue"/>
 
                 <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/jedi_question_three_answer_three"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@android:color/white"
-                    android:layout_marginTop="4dp"
                     android:text="@string/jedi_answer_3_3"
-                    android:layout_marginLeft="35dp"
-                    android:layout_marginStart="35dp"
+                    style="@style/AnswersStyle"
                     app:buttonTint="@color/jedi_blue"/>
 
                 <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/jedi_question_three_answer_four"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@android:color/white"
-                    android:layout_marginTop="4dp"
                     android:text="@string/jedi_answer_3_4"
-                    android:layout_marginLeft="35dp"
-                    android:layout_marginStart="35dp"
+                    style="@style/AnswersStyle"
                     app:buttonTint="@color/jedi_blue"/>
 
             </RadioGroup>
@@ -230,131 +173,73 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginRight="20dp"
-                android:textColor="@android:color/white"
-                android:textSize="16sp"
+                android:layout_marginTop="@dimen/SixteenDP"
                 android:text="@string/jedi_question_4"
                 android:background="@color/jedi_question_background"
-                android:gravity="start"
-                android:paddingTop="2dp"
-                android:paddingBottom="2dp"
-                android:paddingLeft="8dp"
-                android:paddingStart="8dp"
-                android:paddingRight="8dp"
-                android:paddingEnd="8dp"/>
+                style="@style/QuestionsStyle"/>
 
-            <RadioGroup
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <android.support.v7.widget.AppCompatRadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@android:color/white"
-                    android:layout_marginTop="4dp"
-                    android:text="@string/jedi_answer_4_1"
-                    android:layout_marginLeft="35dp"
-                    android:layout_marginStart="35dp"
-                    app:buttonTint="@color/jedi_blue"/>
-
-                <android.support.v7.widget.AppCompatRadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@android:color/white"
-                    android:layout_marginTop="4dp"
-                    android:text="@string/jedi_answer_4_2"
-                    android:layout_marginLeft="35dp"
-                    android:layout_marginStart="35dp"
-                    app:buttonTint="@color/jedi_blue"/>
-
-                <android.support.v7.widget.AppCompatRadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@android:color/white"
-                    android:layout_marginTop="4dp"
-                    android:text="@string/jedi_answer_4_3"
-                    android:layout_marginLeft="35dp"
-                    android:layout_marginStart="35dp"
-                    app:buttonTint="@color/jedi_blue"/>
-
-                <android.support.v7.widget.AppCompatRadioButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:textColor="@android:color/white"
-                    android:layout_marginTop="4dp"
-                    android:text="@string/jedi_answer_4_4"
-                    android:layout_marginLeft="35dp"
-                    android:layout_marginStart="35dp"
-                    app:buttonTint="@color/jedi_blue"/>
-
-            </RadioGroup>
+            <EditText
+                android:id="@+id/jedi_answer_question_four"
+                android:layout_width="@dimen/EditTextWidth"
+                android:layout_height="@dimen/EditTextHeight"
+                android:layout_marginTop="@dimen/EditTextMarginTop"
+                android:layout_marginLeft="@dimen/FourtyDP"
+                android:layout_marginStart="@dimen/FourtyDP"
+                android:paddingLeft="@dimen/EditTextPadding"
+                android:paddingStart="@dimen/EditTextPadding"
+                android:paddingRight="@dimen/EditTextPadding"
+                android:paddingEnd="@dimen/EditTextPadding"
+                android:background="@drawable/jedi_textbox"
+                android:textColor="@android:color/white"
+                android:inputType="text"
+                android:textSize="@dimen/QuestionFontSize"
+                android:gravity="center_vertical"
+                android:singleLine="true"
+                android:imeOptions="actionDone"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginLeft="20dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginRight="20dp"
-                android:textColor="@android:color/white"
-                android:textSize="16sp"
+                android:layout_marginTop="@dimen/SixteenDP"
                 android:text="@string/jedi_question_5"
                 android:background="@color/jedi_question_background"
-                android:gravity="start"
-                android:paddingTop="2dp"
-                android:paddingBottom="2dp"
-                android:paddingLeft="8dp"
-                android:paddingStart="8dp"
-                android:paddingRight="8dp"
-                android:paddingEnd="8dp"/>
+                style="@style/QuestionsStyle"/>
 
             <RadioGroup
+                android:id="@+id/jedi_question_five"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
                 <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/jedi_question_five_answer_one"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@android:color/white"
-                    android:layout_marginTop="4dp"
                     android:text="@string/jedi_answer_5_1"
-                    android:layout_marginLeft="35dp"
-                    android:layout_marginStart="35dp"
+                    style="@style/AnswersStyle"
                     app:buttonTint="@color/jedi_blue"/>
 
                 <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/jedi_question_five_answer_two"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@android:color/white"
-                    android:layout_marginTop="4dp"
                     android:text="@string/jedi_answer_5_2"
-                    android:layout_marginLeft="35dp"
-                    android:layout_marginStart="35dp"
+                    style="@style/AnswersStyle"
                     app:buttonTint="@color/jedi_blue"/>
 
                 <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/jedi_question_five_answer_three"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@android:color/white"
-                    android:layout_marginTop="4dp"
                     android:text="@string/jedi_answer_5_3"
-                    android:layout_marginLeft="35dp"
-                    android:layout_marginStart="35dp"
+                    style="@style/AnswersStyle"
                     app:buttonTint="@color/jedi_blue"/>
 
                 <android.support.v7.widget.AppCompatRadioButton
+                    android:id="@+id/jedi_question_five_answer_four"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@android:color/white"
-                    android:layout_marginTop="4dp"
                     android:text="@string/jedi_answer_5_4"
-                    android:layout_marginLeft="35dp"
-                    android:layout_marginStart="35dp"
+                    style="@style/AnswersStyle"
                     app:buttonTint="@color/jedi_blue"/>
 
             </RadioGroup>
@@ -365,37 +250,40 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="@dimen/FiftyDP"
         android:orientation="horizontal"
         android:layout_alignParentBottom="true"
         android:background="@android:color/black">
 
         <Button
             android:layout_width="wrap_content"
-            android:layout_height="40dp"
+            android:layout_height="@dimen/FourtyDP"
             android:background="@drawable/button_border"
             android:textColor="@color/yellow"
             android:layout_gravity="center_vertical"
             android:text="@string/go_back"
-            android:onClick="goBackJedi"/>
+            android:onClick="goBack"/>
 
         <TextView
+            android:id="@+id/progress"
             android:layout_width="0dp"
-            android:layout_height="20dp"
+            android:layout_height="@dimen/TwentyDP"
             android:textColor="@color/yellow"
-            android:textSize="15sp"
+            android:textSize="@dimen/AnswerFontSize"
             android:text="@string/number_of_marked_questions"
             android:layout_weight="1"
             android:gravity="center_horizontal"
-            android:layout_marginTop="15dp"/>
+            android:layout_marginTop="@dimen/Fifteen"/>
 
         <Button
+            android:id="@+id/finish"
             android:layout_width="wrap_content"
-            android:layout_height="40dp"
+            android:layout_height="@dimen/FourtyDP"
             android:background="@drawable/button_border"
             android:textColor="@color/yellow"
             android:layout_gravity="center_vertical"
-            android:text="@string/done"/>
+            android:text="@string/done"
+            android:onClick="finish"/>
 
     </LinearLayout>
 

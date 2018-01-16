@@ -14,7 +14,7 @@
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="@dimen/TwoHundredDP"
             android:layout_weight="1"
             android:adjustViewBounds="true"
             android:scaleType="centerCrop"
@@ -28,7 +28,7 @@
             android:text="@string/pick_your_side"
             android:textAllCaps="true"
             android:textColor="@color/yellow"
-            android:textSize="16sp" />
+            android:textSize="@dimen/QuestionFontSize" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -43,7 +43,7 @@
                 android:text="@string/jedi"
                 android:textAllCaps="true"
                 android:textColor="@color/jedi_blue"
-                android:textSize="16sp" />
+                android:textSize="@dimen/SmallTextSIze" />
 
             <TextView
                 android:layout_width="0dp"
@@ -53,7 +53,7 @@
                 android:text="@string/sith"
                 android:textAllCaps="true"
                 android:textColor="@color/sith_red"
-                android:textSize="16sp" />
+                android:textSize="@dimen/SmallTextSIze" />
 
         </LinearLayout>
 
@@ -67,20 +67,20 @@
             <ImageButton
                 android:id="@+id/jedi_button"
                 android:layout_width="0dp"
-                android:layout_height="300dp"
-                android:layout_marginLeft="4dp"
-                android:layout_marginStart="4dp"
-                android:layout_marginBottom="4dp"
+                android:layout_height="@dimen/ThreeHundredDP"
+                android:layout_marginLeft="@dimen/FourDP"
+                android:layout_marginStart="@dimen/FourDP"
+                android:layout_marginBottom="@dimen/FourDP"
                 android:layout_weight="2"
                 android:adjustViewBounds="true"
                 android:onClick="selectJedi"
-                android:padding="20dp"
+                android:padding="@dimen/TwentyDP"
                 android:scaleType="centerInside"
                 android:src="@drawable/jedi_button" />
 
             <LinearLayout
                 android:layout_width="0dp"
-                android:layout_height="300dp"
+                android:layout_height="@dimen/ThreeHundredDP"
                 android:layout_weight="1"
                 android:gravity="bottom"
                 android:orientation="vertical">
@@ -90,21 +90,24 @@
                     android:id="@+id/selected_side"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
+                    android:layout_marginBottom="@dimen/TenDP"
                     android:gravity="center_horizontal"
-                    android:paddingLeft="2dp"
-                    android:paddingRight="2dp"
+                    android:paddingLeft="@dimen/TwoDP"
+                    android:paddingStart="@dimen/TwoDP"
+                    android:paddingRight="@dimen/TwoDP"
+                    android:paddingEnd="@dimen/TwoDP"
                     android:text=""
                     android:textAllCaps="true"
                     android:textColor="@android:color/white"
-                    android:textSize="12sp" />
+                    android:textSize="@dimen/SmallTextSIze" />
 
 
                 <Button
-                    android:layout_width="100dp"
-                    android:layout_height="40dp"
+                    android:id="@+id/start"
+                    android:layout_width="@dimen/OneHundredDP"
+                    android:layout_height="@dimen/FourtyDP"
                     android:layout_gravity="center_horizontal"
-                    android:layout_marginBottom="120dp"
+                    android:layout_marginBottom="@dimen/OneHundredTwentyDP"
                     android:background="@drawable/button_border"
                     android:onClick="startQuizz"
                     android:text="@string/start"
@@ -115,10 +118,10 @@
             <ImageButton
                 android:id="@+id/sith_button"
                 android:layout_width="0dp"
-                android:layout_height="300dp"
-                android:layout_marginEnd="4dp"
-                android:layout_marginRight="4dp"
-                android:layout_marginBottom="4dp"
+                android:layout_height="@dimen/ThreeHundredDP"
+                android:layout_marginEnd="@dimen/FourDP"
+                android:layout_marginRight="@dimen/FourDP"
+                android:layout_marginBottom="@dimen/FourDP"
                 android:layout_weight="2"
                 android:adjustViewBounds="true"
                 android:onClick="selectSith"

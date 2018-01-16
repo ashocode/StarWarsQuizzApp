@@ -1,0 +1,62 @@
+package com.example.android.starwarsquizz;
+
+import android.view.View;
+
+import java.util.List;
+
+public interface DataKeeper {
+    void SetQuestionOneMarked(int value);
+    void SetQuestionTwoMarked(int value);
+    void SetQuestionThreeMarked(int value);
+    void SetQuestionFourMarked(int value);
+    void SetQuestionFiveMarked(int value);
+    void SetCheckedBoxMarkedOne(Boolean value);
+    void SetCheckedBoxMarkedTwo(Boolean value);
+    void SetCheckedBoxMarkedThree(Boolean value);
+    void SetCheckedBoxMarkedFour(Boolean value);
+    void ResetUserAnswersToQuestionTwo();
+    void SetUserAnswerToQuestionOne(String value);
+    void SetUserAnswerToQuestionThree(String value);
+    void SetUserAnswerToQuestionFour(String value);
+    void SetUserAnswerToQuestionFive(String value);
+    void SetFinishView(View v);
+    void SetProgressView(View v);
+    void SetViewQuestionOne(View v);
+    void SetViewQuestionTwoAnswerOne(View v);
+    void SetViewQuestionTwoAnswerTwo(View v);
+    void SetViewQuestionTwoAnswerThree(View v);
+    void SetViewQuestionTwoAnswerFour(View v);
+    void SetViewQuestionThree(View v);
+    void SetViewQuestionFour(View v);
+    void SetViewQuestionFive(View v);
+    int GetMaxScore();
+    int GetPointsForSingleAnswerQuestions();
+    int GetPointsForMultiAnswerQuestions();
+    int GetQuestionOneMarked();
+    int GetQuestionTwoMarked();
+    int GetQuestionThreeMarked();
+    int GetQuestionFourMarked();
+    int GetQuestionFiveMarked();
+    boolean GetCheckedBoxOneMarked();
+    boolean GetCheckedBoxTwoMarked();
+    boolean GetCheckedBoxThreeMarked();
+    boolean GetCheckedBoxFourMarked();
+    String GetUserAnswerToQuestionOne();
+    List<String> GetUserAnswersToQuestionTwo();
+    String GetUserAnswerToQuestionThree();
+    String GetUserAnswerToQuestionFour();
+    String GetUserAnswerToQuestionFive();
+    String GetColorEnabled();
+    String GetColorDisabled();
+    int GetNumberOfQuestions();
+    View GetFinishView();
+    View GetProgressView();
+    View GetViewQuestionTwoAnswerOne();
+    View GetViewQuestionTwoAnswerTwo();
+    View GetViewQuestionTwoAnswerThree();
+    View GetViewQuestionTwoAnswerFour();
+    View GetViewQuestionOne();
+    View GetViewQuestionThree();
+    View GetViewQuestionFour();
+    View GetViewQuestionFive();
+}

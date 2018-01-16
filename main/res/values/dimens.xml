@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="TwentyDP">20dp</dimen>
+    <dimen name="EightDP">8dp</dimen>
+    <dimen name="TwoDP">2dp</dimen>
+    <dimen name="AnswerFontSize">14sp</dimen>
+    <dimen name="QuestionFontSize">16sp</dimen>
+    <dimen name="ThirtyFiveDP">35dp</dimen>
+    <dimen name="FourDP">4dp</dimen>
+    <dimen name="EditTextWidth">140dp</dimen>
+    <dimen name="EditTextHeight">28dp</dimen>
+    <dimen name="EditTextMarginTop">12dp</dimen>
+    <dimen name="FourtyDP">40dp</dimen>
+    <dimen name="EditTextPadding">6dp</dimen>
+    <dimen name="FiftyDP">50dp</dimen>
+    <dimen name="SixteenDP">16dp</dimen>
+    <dimen name="ZeroDP">0dp</dimen>
+    <dimen name="NinetyFourDP">94dp</dimen>
+    <dimen name="NinetyDP">90dp</dimen>
+    <dimen name="FiftyFiveDP">55dp</dimen>
+    <dimen name="Fifteen">15dp</dimen>
+    <dimen name="ScreenPadding">8dp</dimen>
+    <dimen name="EightyDP">80dp</dimen>
+    <dimen name="SmallTextSIze">12sp</dimen>
+    <dimen name="OneHundredDP">100dp</dimen>
+    <dimen name="TwoHundredDP">200dp</dimen>
+    <dimen name="ThreeHundredDP">300dp</dimen>
+    <dimen name="TenDP">10dp</dimen>
+    <dimen name="OneHundredTwentyDP">120dp</dimen>
+    <dimen name="BigFontSize">24sp</dimen>
+    <dimen name="TwentySP">20sp</dimen>
+    <dimen name="SixDP">6dp</dimen>
+    <dimen name="EighteenSP">18sp</dimen>
+    <dimen name="ThirtyDP">30dp</dimen>
+</resources>

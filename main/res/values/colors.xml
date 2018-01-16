@@ -8,4 +8,5 @@
     <color name="sith_red">#E53935</color>
     <color name="sith_question_background">#4E342E</color>
     <color name="jedi_question_background">#455A64</color>
+    <color name="textbox_background">#37474F</color>
 </resources>

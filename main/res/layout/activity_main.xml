@@ -14,7 +14,7 @@
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="80dp"
+            android:layout_height="@dimen/EightyDP"
             android:layout_weight="1"
             android:adjustViewBounds="true"
             android:scaleType="centerCrop"
@@ -28,13 +28,13 @@
             android:text="@string/pick_your_side"
             android:textAllCaps="true"
             android:textColor="@color/yellow"
-            android:textSize="16sp" />
+            android:textSize="@dimen/QuestionFontSize" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:layout_marginBottom="2dp">
+            android:layout_marginBottom="@dimen/TwoDP">
 
             <TextView
                 android:layout_width="0dp"
@@ -44,7 +44,7 @@
                 android:text="@string/jedi"
                 android:textAllCaps="true"
                 android:textColor="@color/jedi_blue"
-                android:textSize="12sp" />
+                android:textSize="@dimen/SmallTextSIze" />
 
             <TextView
                 android:layout_width="0dp"
@@ -54,7 +54,7 @@
                 android:text="@string/sith"
                 android:textAllCaps="true"
                 android:textColor="@color/sith_red"
-                android:textSize="12sp" />
+                android:textSize="@dimen/SmallTextSIze" />
 
         </LinearLayout>
 
@@ -72,7 +72,7 @@
                 android:layout_weight="1"
                 android:adjustViewBounds="true"
                 android:onClick="selectJedi"
-                android:padding="20dp"
+                android:padding="@dimen/TwentyDP"
                 android:scaleType="centerInside"
                 android:src="@drawable/jedi_button" />
 
@@ -83,6 +83,7 @@
                 android:layout_weight="1"
                 android:adjustViewBounds="true"
                 android:onClick="selectSith"
+                android:padding="@dimen/TwentyDP"
                 android:scaleType="centerInside"
                 android:src="@drawable/sith_button" />
 
@@ -92,19 +93,20 @@
             android:id="@+id/selected_side"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="2dp"
+            android:layout_marginTop="@dimen/TwoDP"
             android:gravity="center_horizontal"
             android:text=""
             android:textColor="@android:color/white"
-            android:textSize="14sp" />
+            android:textSize="@dimen/AnswerFontSize" />
 
 
         <Button
-            android:layout_width="100dp"
-            android:layout_height="40dp"
+            android:id="@+id/start"
+            android:layout_width="@dimen/OneHundredDP"
+            android:layout_height="@dimen/FourtyDP"
             android:layout_gravity="center_horizontal"
-            android:layout_marginBottom="4dp"
-            android:layout_marginTop="8dp"
+            android:layout_marginBottom="@dimen/FourDP"
+            android:layout_marginTop="@dimen/EightDP"
             android:background="@drawable/button_border"
             android:text="@string/start"
             android:textColor="@color/yellow"
