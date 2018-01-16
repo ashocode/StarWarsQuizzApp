@@ -12,4 +12,28 @@
         <item name="colorControlActivated">#455A64</item>
     </style>
 
+    <style name="QuestionsStyle">
+        <item name="android:layout_marginStart">@dimen/TwentyDP</item>
+        <item name="android:layout_marginLeft">@dimen/TwentyDP</item>
+        <item name="android:layout_marginEnd">@dimen/TwentyDP</item>
+        <item name="android:layout_marginRight">@dimen/TwentyDP</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/QuestionFontSize</item>
+        <item name="android:gravity">start</item>
+        <item name="android:paddingTop">@dimen/TwoDP</item>
+        <item name="android:paddingBottom">@dimen/TwoDP</item>
+        <item name="android:paddingLeft">@dimen/EightDP</item>
+        <item name="android:paddingStart">@dimen/EightDP</item>
+        <item name="android:paddingRight">@dimen/EightDP</item>
+        <item name="android:paddingEnd">@dimen/EightDP</item>
+    </style>
+
+    <style name="AnswersStyle">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">@dimen/AnswerFontSize</item>
+        <item name="android:layout_marginTop">@dimen/FourDP</item>
+        <item name="android:layout_marginLeft">@dimen/ThirtyFiveDP</item>
+        <item name="android:layout_marginStart">@dimen/ThirtyFiveDP</item>
+    </style>
+
 </resources>

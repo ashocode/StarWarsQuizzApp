@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:context="com.example.android.starwarsquizz.FinalScore"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:background="@android:color/black">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/final_screen"
+        android:scaleType="centerCrop"
+        android:adjustViewBounds="true"
+        android:alpha=".40"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/your_knowledge_of_the_force"
+                    android:textSize="@dimen/BigFontSize"
+                    android:textColor="@color/yellow"
+                    android:gravity="center"
+                    android:layout_marginBottom="@dimen/TwentyDP"/>
+
+                <ImageView
+                    android:id="@+id/score_picture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/trooper"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="@dimen/TenDP"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/points"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/TwentySP"
+                    android:textColor="@color/yellow"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/TwentyDP"/>
+
+                <TextView
+                    android:id="@+id/score"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/AnswerFontSize"
+                    android:textColor="@android:color/white"
+                    android:gravity="center"
+                    android:layout_marginTop="@dimen/TwentyDP"
+                    android:layout_marginBottom="@dimen/ThirtyDP"/>
+
+                <Button
+                    android:layout_width="@dimen/OneHundredDP"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_border"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/TwentyDP"
+                    android:text="@string/restart"
+                    android:textSize="@dimen/QuestionFontSize"
+                    android:textColor="@color/yellow"
+                    android:onClick="restart"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+
+
+    </FrameLayout>
