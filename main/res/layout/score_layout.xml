@@ -83,7 +83,8 @@
                 android:text="@string/restart"
                 android:textColor="@color/yellow"
                 android:textSize="@dimen/EighteenSP"
-                android:onClick="restart"/>
+                android:onClick="restart"
+                android:layout_marginBottom="@dimen/EightDP"/>
 
         </LinearLayout>
 
